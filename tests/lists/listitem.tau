@@ -1,0 +1,13 @@
+kb
+(?A) :not ?A.
+fin.
+
+query
+(?banana) :not :SAT.
+fin.
+
+shouldbe
+(:SAT) :not :SAT .
+fin.
+
+thatsall
