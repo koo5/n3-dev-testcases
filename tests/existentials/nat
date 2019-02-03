@@ -1,5 +1,6 @@
 @keywords a .
 @prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix tau_builtins: <http://loworbit.now.im/rdf/tau_builtins#>.
 @prefix : <file://>.
 
 kb
@@ -39,7 +40,8 @@ shouldbetrue
 
 #5
 query
- ?three :has_succ ?four. :zero :has_succ ?one. ?one :has_succ ?two. ?two :has_succ ?three.
+?three :has_succ ?four. :zero :has_succ ?one. ?one :has_succ ?two. ?two :has_succ ?three. 
+:dummy tau_builtins:output ?four.
 fin.
 shouldbetrue
 
